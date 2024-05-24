@@ -1,4 +1,3 @@
-// eulerrotation.ts
 
 class EulerRotation {
     static Pitch(angle: number, rotation: number[][]): void {
