@@ -1,11 +1,7 @@
-// dataserial.ts
-
-// Function to convert JSON to string
 export function jsonToString(jsonMessage: any): string {
     return JSON.stringify(jsonMessage);
 }
 
-// Function to encode string to byte array manually
 export function stringToBytes(str: string): number[] {
     const bytes: number[] = [];
 
@@ -32,19 +28,13 @@ export function stringToBytes(str: string): number[] {
     return bytes;
 }
 
-// dataserial.ts
 
-// Function to convert JSON to string
 
-// Function to convert JSON to byte array
 export function jsonToByteArray(jsonMessage: any): string {
-    // Convert JSON message to string
     const jsonString: string = jsonToString(jsonMessage);
     
-    // Encode string to byte array manually
     const byteArray: number[] = jsonString.split('').map((char) => char.charCodeAt(0));
     
-    // Format byte array as a string
     const formattedByteArray: string = '[' + byteArray.join(', ') + ']';
     
     return formattedByteArray;
