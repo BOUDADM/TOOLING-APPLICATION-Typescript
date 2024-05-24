@@ -51,7 +51,6 @@ class XmlParser {
     
 }
 
-// Example XML input
 const xmlInput = `
 <ECUData>
     <ECU id="1">
@@ -67,9 +66,7 @@ const xmlInput = `
 </ECUData>
 `;
 
-// Parsing XML
 const parsedXml = XmlParser.parse(xmlInput);
 
-// Printing parsed tree
 XmlParser.print(parsedXml);
 
