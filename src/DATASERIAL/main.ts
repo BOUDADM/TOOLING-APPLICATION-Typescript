@@ -4,7 +4,6 @@ const prompt = require('prompt-sync')();
 function getUserInputAndProcess() {
     const jsonString = prompt('Please enter a JSON string: ');
 
-    // Parse the JSON string input
     let jsonObject: any;
     try {
         jsonObject = JSON.parse(jsonString);
